@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAEJEON ARTS CENTER</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.min.css">
+  <!-- calendar -->
+  <link rel="stylesheet" href="./fullcalendar-5.11.0/lib/main.min.css" />
+
+  <link rel="stylesheet" href="./css/daejeonartscenter.css">
+  <link rel="stylesheet" media="all and (max-width:1199px)" href="./css/daejeonartscenterT.css">
+  <link rel="stylesheet" media="all and (max-width:767px)" href="./css/daejeonartscenterM.css">
+</head>
+
+<div id="wrap">
+  <!-- header -->
+  <header id="wrap_header">
+    <div class="site_info">
+      <ul>
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">ENGLISH</a></li>
+        <li><a href="./sitemap.html">사이트맵</a></li>
+      </ul>
+    </div>
+    <div class="header_bottom">
+      <div class="logo"><a href="./daejeonartscenter.html"><img src="./img/logo/대전예당logo.png" alt="대전예술의전당 로고"></a>
+      </div>
+      <div class="nav">
+        <div>
+          <input type="text" placeholder="검색">
+          <a href="#"><span class="material-icons-outlined search">
+              search
+            </span></a>
+        </div>
+        <a href="#" class="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- wrap nav -->
+  <div id="wrap_nav">
+    <div class="nav">
+      <ul class="main_menu">
+        <li class="concert"><a href="#">공연</a>
+          <ul class="sub_menu menu1">
+            <li><a href="#">공연안내</a></li>
+            <li><a href="#">예매/취소안내</a></li>
+            <li><a href="#">페스티벌</a></li>
+          </ul>
+        </li>
+        <li class="placerental"><a href="#">대관</a>
+          <ul class="sub_menu  menu2">
+            <li class="announcement"><a href="./sub대관공고.html">대관공고</a></li>
+            <li class="concerthall"><a href="./sub2공연장신청안내.html">공연장대관</a></li>
+            <li class="conventionhall"><a href="./sub5컨벤션홀대관안내.html">컨벤션홀대관</a></li>
+          </ul>
+        </li>
+        <li class="membership"><a href="#">회원제</a>
+          <ul class="sub_menu  menu3">
+            <li><a href="#">회원안내</a></li>
+            <li><a href="#">Artner</a></li>
+          </ul>
+        </li>
+        <li class="Servicecenter"><a href="#">고객센터</a>
+          <ul class="sub_menu  menu4">
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">고객문의</a></li>
+            <li><a href="#">공지사항</a></li>
+          </ul>
+        </li>
+        <li class="iontroduce"><a href="#">기관소개</a>
+          <ul class="sub_menu menu5">
+            <li><a href="#">인사말</a></li>
+            <li><a href="#">연혁</a></li>
+            <li><a href="#">운영목표</a></li>
+            <li><a href="#">조직과기구</a></li>
+            <li><a href="#">시설안내</a></li>
+            <li><a href="#">후원회</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- wrapnav// -->
+  <!-- wrap_visual -->
+  <div id="wrap_visual" class="swiper mySwiper">
+    <div class="visual swiper-wrapper">
+      <div class="swiper-slide slide1"></div>
+      <div class="swiper-slide slide2"></div>
+      <div class="swiper-slide slide3"></div>
+      <div class="swiper-slide slide4"></div>
+      <div class="swiper-slide slide5"></div>
+      <div class="swiper-slide slide6"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- calendar -->
+  <div class="calendar">
+    <a href="javascript:;" class="btn">월별공연일정</a>
+    <div class="calendar_wrap" id="calendar_wrap">
+      <div id='calendarRow'>
+        <a href="javascript:;" class="btn">닫기</a>
+      </div>
+    </div>
+  </div>
+  <!-- 부트스트랩 모달 -->
+  <div class="modal fade" id="calendarModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 id="modalTitle" class="modal-title">타이틀</h4>
+        </div>
+        <div id="modalBody" class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">예매하러가기</button>
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- wrap_content -->
+  <div id="wrap_content">
+    <div class="content">
+      <div class="content_item">
+        <h3>전체공연</h3>
+      </div>
+      <div class="content_list swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide pro1">
+            <div class="content_box">
+              <div class="content_img img1">
+                <img src="./img/국제음악제p.jpg" alt="포스터1">
+              </div>
+            </div>
+            <div class="cont cont1">
+              <div>
+                <p><span>[기획]제22회 대전국제음악제 </span>2022년8월 16일(화) ~ 31(수)</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide pro1">
+            <div class="content_box">
+              <div class="content_img img1">
+                <img src="./img/뉴아티스트.jpg" alt="포스터1">
+              </div>
+            </div>
+            <div class="cont cont1">
+              <div>
+                <p><span>[기획]2022 썸머뉴아티스트콘서트 </span>2022년 2022년 8월 27일(토)</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide pro1">
+            <div class="content_box">
+              <div class="content_img img1">
+                <img src="./img/레이첸.jpg" alt="포스터1">
+              </div>
+            </div>
+            <div class="cont cont1">
+              <div>
+                <p><span>[기획]레이 첸 & 선우예권 </span>2022년 9월 1일(목)</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="swiper-slide pro1">
+            <div class="content_box">
+              <div class="content_img img1">
+                <img src="./img/심야극장.jpg" alt="포스터1">
+              </div>
+            </div>
+            <div class="cont cont1">
+              <div>
+                <p><span>[기획] 잠들기 전 심야극장 |_김정원x임동혁</span>2022년 6월 10일(금)</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide pro1">
+            <div class="content_box">
+              <div class="content_img img1">
+                <img src="./img/아트팝.jpg" alt="포스터1">
+              </div>
+            </div>
+            <div class="cont cont1">
+              <div>
+                <p><span>[기획] 아트팝 오페라 [안드로메다]</span>2022년 8월 27일(토) ~ 28일(일) / 2일 3회</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide pro1">
+            <div class="content_box">
+              <div class="content_img img1">
+                <img src="./img/신인발굴.jpg" alt="포스터1">
+              </div>
+            </div>
+            <div class="cont cont1">
+              <div>
+                <p><span>[기획] 2022 썸머뉴아티스트콘서트 [첼리스트 원민지]</span>2022년 8월 27일(토) / 1일 1회</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide pro1">
+            <div class="content_box">
+              <div class="content_img img1">
+                <img src="./img/포스터3.jpg" alt="포스터1">
+              </div>
+            </div>
+            <div class="cont cont1">
+              <div>
+                <p><span>[기획] 2022 아침을 여는 클래식 6월 [소프라노 홍혜란, 테너 최원휘]</span>2022년 6월 14일(화) / 1일 1회</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide pro1">
+            <div class="content_box">
+              <div class="content_img img1">
+                <img src="./img/인문학.jpg" alt="포스터1">
+              </div>
+            </div>
+            <div class="cont cont1">
+              <div>
+                <p><span>[기획] 2022 인문학콘서트 [연극배우 윤석화]</span>2022년 5월 10일 (화) / 1일 1회</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide pro1">
+            <div class="content_box">
+              <div class="content_img img1">
+                <img src="./img/모다페.jpg" alt="포스터1">
+              </div>
+            </div>
+            <div class="cont cont1">
+              <div>
+                <p><span>[기획] 모다페 in 대전 [스파크 플레이스]</span>2022년 5월 24일(화)</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide pro2">
+            <div class="content_box">
+              <div class="content_img img1">
+                <img src="./img/첼리콤비.jpg" alt="포스터1">
+              </div>
+            </div>
+            <div class="cont cont1">
+              <div>
+                <p><span>[대관] 앙상블 첼리콤비의 톡(Talk) 튀는 콘서트</span>2022년 5월 25일(수) / 1일 1회</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide pro2">
+            <div class="content_box">
+              <div class="content_img img1">
+                <img src="./img/양새미.jpg" alt="포스터1">
+              </div>
+            </div>
+            <div class="cont cont1">
+              <div>
+                <p><span>[대관]양새미 첼로 귀국독주회</span>2022년 5월 27일(금) / 1일 1회</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide pro3">
+            <div class="content_box">
+              <div class="content_img img1">
+                <img src="./img/시립교향.jpg" alt="포스터1">
+              </div>
+            </div>
+            <div class="cont cont1">
+              <div>
+                <p><span>[시립예술단] 대전시립교향악단 마스터즈시리즈 5 [브루크너 로맨틱]</span>
+                  2022년 5월 27일(금) / 1일 1회</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide pro3">
+            <div class="content_box">
+              <div class="content_img img1">
+                <img src="./img/시립청소년.jpg" alt="포스터1">
+              </div>
+            </div>
+            <div class="cont cont1">
+              <div>
+                <p><span>[시립예술단] 대전시립청소년합창단 제79회 정기연주회 [봉오동 · 청산리 최후의 결전]</span>
+                  2022년 5월 21일(토) / 1일 1회</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide pro2">
+            <div class="content_box">
+              <div class="content_img img1">
+                <img src="./img/클라.jpg" alt="포스터1">
+              </div>
+            </div>
+            <div class="cont cont1">
+              <div>
+                <p><span>[대관] 2022 대전클라리넷콰이어 정기연주회</span>
+                  2022년 5월 29일(일) / 1일 1회</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide pro2">
+            <div class="content_box">
+              <div class="content_img img1">
+                <img src="./img/오푸스.jpg" alt="포스터1">
+              </div>
+            </div>
+            <div class="cont cont1">
+              <div>
+                <p><span>[대관] 오푸스 심포니 오케스트라 정기연주회 [낭만속으로]</span>2022년 5월 31일(화) / 1일 1회</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide pro3">
+            <div class="content_box">
+              <div class="content_img img1">
+                <img src="./img/영아티스트.jpg" alt="포스터1">
+              </div>
+            </div>
+            <div class="cont cont1">
+              <div>
+                <p><span>[시립예술단] 대전시립교향악단 디스커버리시리즈 7 [영 아티스트 콘서트]</span>2022년 5월 19일(목) / 1일 1회</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- wrap_guide -->
+  <div id="wrap_guide">
+    <div class="guide">
+      <h3>대관안내</h3>
+      <ul class="items">
+        <!-- 아이콘이미지 -->
+        <li><a href="./sub대관공고.html"><img src="./img/대관신청/대관공고.png" alt="대관공고" class="rotate-diagonal-1"><span>
+              대관공고</span></a></li>
+        <li><a href="./sub4대관료.html"><img src="./img/대관신청/사용료.png" alt="시설사용료" class="rotate-diagonal-1"><span>
+              시설사용료</span> </a></li>
+        <li><a href="./sub3대관절차.html"><img src="./img/대관신청/대관절차.png" alt="대관절차"
+              class="rotate-diagonal-1"><span>대관절차</span> </a></li>
+        <li><a href="./sub2공연장신청안내.html"><img src="./img/대관신청/신청서.png" alt="신청서"
+              class="rotate-diagonal-1"><span>신청서</span> </a></li>
+        <li><a href="./sub2공연장신청안내.html"><img src="./img/대관신청/대관신청.png" alt="대관신청" class="rotate-diagonal-1">
+            <span>대관신청</span> </a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- wrap_notice -->
+  <div id="wrap_notice">
+    <div class="notice_title tabmenu">
+      <!-- tab button -->
+      <div class="notice_btn" id="myBTN">
+        <!--  -->
+        <button type="button" data-filter=".mix" class="btn active">전체</button>
+        <button type="button" data-filter=".title2" class="btn">공지사항</button>
+        <button type="button" data-filter=".title3" class="btn">공모사업</button>
+        <button type="button" data-filter=".title4" class="btn">오디션/아카데미</button>
+      </div>
+      <!-- select -->
+      <select name="select" id="filter-select">
+        <option value=".mix">전체</option>
+        <option value=".title2">공지사항</option>
+        <option value=".title3">공모사업</option>
+        <option value=".title4">오디션/아카데미</option>
+      </select>
+      <div class="notice_list">
+        <ul>
+          <li class="mix title2" data-order="1"><a href="#">
+              <!--  -->
+              <div class="img"><span><img src="./img/sub/공지사항.png" alt="공지사항"></span>
+                <div>
+                  <span class="title">연극 [에스메의 여름] 어린이날 선물 이벤트</span>
+                  <span class="date">2022-05-03</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="mix title2" data-order="2"><a href="#">
+              <div class="img">
+                <span><img src="./img/sub/공지사항.png" alt="공지사항"></span>
+                <div>
+                  <span class="title">다비트 라일란트 & 양인모 [프랑스 메츠 국립오케스트라] 앙코르 곡목 안내</span>
+                  <span class="date">2022-05-02</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="mix title2" data-order="3"><a href="#">
+              <div class="img">
+                <span><img src="./img/sub/공지사항.png" alt="공지사항"></span>
+                <div>
+                  <span class="title">대전예술의전당 기획공연 추가 오픈 안내(5~8월)</span>
+                  <span class="date">2022-04-18</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="mix title2" data-order="4"><a href="#">
+              <div class="img"><span><img src="./img/sub/공지사항.png" alt="공지사항"></span>
+                <div>
+                  <span class="title">대전예술의전당 아트너(ARTNER) 모집 공고</span>
+                  <span class="date">2022-04-01</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="mix title2" data-order="5"><a href="#">
+              <div class="img"><span><img src="./img/sub/공지사항.png" alt="공지사항"></span>
+                <div>
+                  <span class="title">연극 [회란기] 공연취소 안내</span>
+                  <span class="date">2022-03-23</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="mix title2" data-order="6"><a href="#">
+              <div class="img"><span><img src="./img/sub/공지사항.png" alt="공지사항"></span>
+                <div>
+                  <span class="title">통합회원 절차 안내</span>
+                  <span class="date">2022-03-15</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!--  -->
+          <li class="mix title3" data-order="7"><a href="#">
+              <div class="img"><span><img src="./img/sub/공모사업.png" alt="공모사업"></span>
+                <div>
+                  <span class="title"> 2022 스프링페스티벌 [하이든 아벤트] 출연진 오디션 신청</span>
+                  <span class="date">2022-02-03</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="mix title3" data-order="8"><a href="#">
+              <div class="img"><span><img src="./img/sub/공모사업.png" alt="공모사업"></span>
+                <div>
+                  <span class="title"> 2022 스프링페스티벌 연극 [세계를 건너 너에게 갈게] 배우 오디션 신청</span>
+                  <span class="date">2022-01-24</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="mix title3" data-order="9"><a href="#">
+              <div class="img"><span><img src="./img/sub/공모사업.png" alt="아카데미"></span>
+                <div>
+                  <span class="title"> 2022 DJAC 청년오케스트라 단원 추가모집 오디션 결과 발표</span>
+                  <span class="date">2022-03-29 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="mix title3" data-order="10"><a href="#">
+              <div class="img"><span><img src="./img/sub/공모사업.png" alt="아카데미"></span>
+                <div>
+                  <span class="title"> 2022 DJAC 청년오케스트라 단원 추가모집 오디션 공고</span>
+                  <span class="date">2022-03-02</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="mix title3" data-order="11"><a href="#">
+              <div class="img"><span><img src="./img/sub/공모사업.png" alt="아카데미"></span>
+                <div>
+                  <span class="title"> 2022 DJAC 청년오케스트라 오디션 결과 발표</span>
+                  <span class="date">2022-02-23 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="mix title4" data-order="12"><a href="#">
+              <div class="img"><span><img src="./img/sub/아카데미.png" alt="아카데미"></span>
+                <div>
+                  <span class="title"> 2022 DJAC 청년오케스트라 오디션 순서</span>
+                  <span class="date">2022-02-18 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="mix title4" data-order="13"><a href="#">
+              <div class="img"><span><img src="./img/sub/아카데미.png" alt="아카데미"></span>
+                <div>
+                  <span class="title">26기 음악영재아카데미 수강신청 안내</span>
+                  <span class="date">2022-02-11 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="mix title4" data-order="14"><a href="#">
+              <div class="img"><span><img src="./img/sub/아카데미.png" alt="아카데미"></span>
+                <div>
+                  <span class="title"> 26기 음악영재아카데미 오디션 결과발표</span>
+                  <span class="date">2022-02-11 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- quickmenu -->
+  <div id="quickmenu">
+    <ul>
+      <li><a href="./daejeonartscenter.html"><span> QUICK</span><span class="material-icons-outlined">
+            home</span></a>
+      </li>
+      <li class="quikitem"><a href="#"><img src="./img/퀵메뉴/1월간프로그램가이드.png" alt="월간프로그램가이드" class="rotate-center"><span>
+            월간프로그램<br>가이드</span></a></li>
+      <li class="quikitem"><a href="#"><img src="./img/퀵메뉴/1공연예매안내.png" alt="공연/예매안내"
+            class="rotate-center"><span>공연예매안내042.270.8333</span></a>
+      </li>
+      <li class="quikitem"><a href="#"><img src="./img/퀵메뉴/1공연예매.png" alt="인터파크예매" class="rotate-center"><span>
+            인터파크예매1544.1566</span></a>
+      </li>
+      <li class="quikitem"><a href="#"><img src="./img/퀵메뉴/1좌석배치도.png" alt="좌석배치도" class="rotate-center"><span
+            class="one"> 좌석배치도</span></a>
+      </li>
+      <li class="quikitem"><a href="#"><img src="./img/퀵메뉴/1오시는길.png" alt="오시는길" class="rotate-center"><span
+            class="one"> 오시는길</span></a>
+      </li>
+      <li class="quikitem"><a href="#"><img src="./img/퀵메뉴/1멤버십.png" alt="멤버십" class="rotate-center"><span class="one">
+            멤버십</span></a></li>
+      <li><a href="#"><span class="material-icons-outlined">
+            expand_less
+          </span><span> TOP</span></a></li>
+    </ul>
+  </div>
+  <!-- banner_org -->
+  <div id="banner_org" class="swiper mySwiper3">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide1"><a href="https://www.kocaca.or.kr/" target='_blank'>한국문화예술회관연합회</a> </div>
+      <div class="swiper-slide slide2"><a href="https://dmdt.artdj.kr/dmdt/" target='_blank'>대전시립무용단</a></div>
+      <div class="swiper-slide slide2"><a href="https://djpc.artdj.kr/djpc/" target='_blank'>대전시립합창단</a></div>
+      <div class="swiper-slide slide2"><a href="https://dpo.artdj.kr/dpo/" target='_blank'>대전시립교향악단</a></div>
+      <div class="swiper-slide slide2"><a href="#">대전시립청소년합창단</a></div>
+      <div class="swiper-slide slide2"><a href="https://www.daejeon.go.kr/" target='_blank'>대전광역시</a></div>
+      <div class="swiper-slide slide2"><a href="https://www.culture.go.kr/index.do" target='_blank'>문화포털</a></div>
+    </div>
+  </div>
+  <!-- wrap_footer -->
+  <div id="wrap_footer">
+    <div class="footer">
+      <div class="footer_floor1">
+        <ul class="text">
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">영상정보처리기기운영 관리방침</a></li>
+          <li><a href="#">이메일집단수집거부</a></li>
+          <li><a href="#">뷰어다운로드</a></li>
+        </ul>
+        <ul class="sns">
+          <li><a href="https://www.youtube.com/channel/UCmptozukZlJ5sLqyBbc24jA" target='_blank'><img
+                src="./img/sns/youtube.png" alt="유튜브" class="rotate-diagonal-1"></a></li>
+          <li><a href="https://m.facebook.com/djartscenter" target='_blank'><img src="./img/sns/facebook.png" alt="페이스북"
+                class="rotate-diagonal-1"></a></li>
+          <li><a href="https://www.instagram.com/djartscenter" target='_blank'><img src="./img/sns/instar.png"
+                alt="인스타그램" class="rotate-diagonal-1"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_floor2">
+      <div class="footer_text">
+        <address>우)35204 대전광역시 서구 둔산대로 135 대전예술의전당</address>
+        <address>Tel. 042-270-8333 Fax. 042-270-8149</address>
+        <p>Copyright(c) 2020 DAEJEON ARTS CENTER. All Rights Reserved.</p>
+      </div>
+      <div class="footerlogo"><img src="./img/logo/logo_footer.png" alt="로고"></div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="./fullcalendar-5.11.0/lib/main.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./script/mixitup.min.js"></script>
+<script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+<script src="./script/daejeonartscenter.js"></script>
+</body>
+
+</html>

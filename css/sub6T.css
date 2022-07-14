@@ -1,0 +1,379 @@
+@charset "utf=8";
+/* header */
+#wrap_header {
+    
+     
+    min-width: 768px;
+    height: 70px;
+    line-height: 90px;
+  }
+  #wrap_header .site_info{
+    display: none;
+  }
+  #wrap_header .header_bottom {
+    max-width: 95%;  
+  }
+  
+  #wrap_header .header_bottom .nav input{
+    display: none;
+  }
+  #wrap_header .header_bottom .nav span {
+    color: #fff;
+    
+    padding-left: 18px;
+  
+  }
+  #wrap_header .header_bottom img {
+    width: 200px;
+    height: 30px;
+    margin-left: 10px;
+  }
+
+/* 아이콘사이즈 */
+/* #wrap_header .header_bottom .material-icons-outlined {
+  font-size: 1.875rem;
+} */
+
+/* wrap_nav top */
+
+#wrap_nav .nav{
+  position: absolute;
+  z-index: 1000;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 460px;
+  margin: 0 auto;
+  display: flex;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+  box-shadow: 0px 6px 2px rgba(0, 0, 0,  0.6);
+  background-color: #46444F;
+}
+#wrap_nav .main_menu{
+  display: flex;
+  margin: 0px auto;
+  height: 460px;
+}
+#wrap_nav .main_menu > li{
+  width: 140px;
+  text-align: center;
+  color: #ccc;
+  border-right: 1px solid #808080;
+}
+#wrap_nav .main_menu > li:first-child{
+  border-left:1px solid #808080;
+}
+
+#wrap_nav .main_menu > li > a{
+  display: block;
+  margin: 50px 0;
+  font-size:20px ;
+  font-weight: bold;
+  padding: 8px 0;
+
+}
+
+#wrap_nav .sub_menu > li > a{
+  display: block;
+ 
+  font-size: 15px;
+  padding: 5px 0;
+ 
+} 
+
+/* 대관공고 / wrap_subpage6 */
+#wrap_subpage6 {
+  /* max-width: 100%; */
+  width: 100%;
+  height: 1200px;
+  margin: 0 auto;
+}
+#wrap_subpage6 .sub_top {
+  
+  height: 210px;
+  line-height: 210px;
+  background-position: center;
+  font-size: 30px;
+  
+}
+/* submenu */
+
+#submenu {
+    max-width: 100%;
+    height: 50px;
+    justify-content: space-around;
+    
+  }
+  
+  #submenu > a {
+    width: 70px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: -80px;
+    /* border-right: 1px solid #e5e5e5; */
+  }
+  
+  #submenu div{
+    display: flex;
+    width: 50px;
+    margin-right: -50px;
+  }
+  #submenu .print{
+    text-indent: -1000000px;
+    
+  }
+  
+  #submenu .share{
+    border-left: 1px solid #e5e5e5;
+    padding-left: 20px;
+    margin-right: 0px;
+  }
+  
+  
+  #submenu > div > a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-left: none;
+    display: flex;
+  }
+  
+  #submenu>ul {
+    width: 200px;
+    line-height: 50px;
+    text-align: left;
+    color: #fff;
+    font-size: 23px;
+    margin-left: 15px;
+  }
+  
+  #submenu .top {
+    line-height: 50px;
+    font-size: 23px;
+  }
+  
+  /* submenu//  */
+  #wrap_subcontent6{
+    /* max-width: 100%; */
+    width: 100%;
+    /* height: 2000px; */
+  }
+   /* submenu//  */
+   
+#tabmenu1{
+  width: 100px;
+  height: 50px;
+  margin-left: -100px;
+}
+#tabmenu2{
+  width: 150px;
+  height: 50px;
+  margin-left: -80px;
+}
+#tabmenu3{
+  width: 150px;
+  height: 50px;
+  margin-left: -30px;
+}
+
+
+  
+  /* subcontent6 */
+  #wrap_subcontent6{
+    /* width: 768px; */
+    /* width: 100vw; */
+    width: 100vw;
+    margin: 0 auto;
+  }
+  #wrap_subcontent6 .sub_con{
+    /* width: 768px; */
+    width: 100%;
+    /* height: 100%; */
+    margin: 0 auto;
+  }
+  #wrap_subcontent6 .sub_title6{
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  
+  }
+ */
+  #wrap_subcontent6 .sub6item{
+    /* max-width: 100%; */
+    width: 80%;
+    margin: 20px auto;
+    flex-direction: column;
+    flex-wrap: wrap; 
+   
+  }
+  #wrap_subcontent6 .sub6item .box{
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* #wrap_subcontent6 .item_box{
+    width: 80%;
+    height: 300px;
+    flex-direction: column;
+    flex-wrap: wrap; 
+
+  } */
+  /* #wrap_subcontent6 .sub6item p{
+    text-align: left;
+    margin: 0 10px 20px 10px;
+  } */
+  #wrap_subcontent6 .sub6item ul{
+    margin-bottom: 10px;
+    /* width: 500px; */
+    width: 50%;
+    /* margin-left: 80px; */
+  }
+  /* #wrap_subcontent6 .sub6item li{
+    padding-bottom: 10px;
+    width: 50%;
+    
+   } */
+  #wrap_subcontent6 .item_title{
+    width: 300px;
+    height: 40px;
+  }
+  #wrap_subcontent6 .item_title h4{
+    width: 300px;
+    height: 40px;
+    font-size: 1.375rem;
+    margin-left: 80px;
+    margin-bottom: 20px;
+  }
+  /* #wrap_subcontent6 .table{
+    width: 700px;
+
+    margin-bottom: 30px;
+    
+  } */
+  /* #wrap_subcontent6 .sub6item p{
+    font-size: 14px;
+  } */
+  #wrap_subcontent6 .sub6item .box{
+    width: 100%;
+  }
+  #wrap_subcontent6 .item_box{
+    width: 80%;
+  }
+  /* #wrap_subcontent6 .sub6item p:nth-of-type(2){
+      color:#00549B ;
+      font-size: 14px;
+      word-wrap: break-word;
+  } */
+/* scroll */
+.scrollbar{
+  /* width: 680px;  */
+  width: 100%; 
+  height: 205px; 
+  border:1px solid #000; 
+  overflow: auto;
+}
+
+  /* quickmenu */
+
+#quickmenu {
+  width:100%;
+  height: 90px;
+  text-align: center;
+}
+#quickmenu ul li:first-child {
+  height: 90px;
+  padding-top: 25px
+}
+#quickmenu ul li:last-child {
+  height: 90px;
+  padding-top: 20px;
+  margin-right: -1px;
+}
+
+/* 이미지 */
+#quickmenu ul li img {
+  background-color: #fff;
+  /* background-color: red; */
+  width: 30px;
+  height: 30px;
+  margin: 10px 0;
+}
+#quickmenu ul .quikitem {
+  max-width: 90px;
+}
+
+#quickmenu ul .quikitem span {
+  width: 90px;
+  height: 20px;
+  margin-left:0px;
+  margin-bottom: 15px;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+#quickmenu ul .quikitem .one {
+  line-height: 30px;
+}
+
+/* banner_org */
+
+/* banner_org */
+#banner_org.mySwiper3 {
+  height: 35px;
+  line-height: 35px;
+}
+
+#banner_org .swiper-wrapper .swiper-slide {
+  display: inline;
+  border: 1px solid #E5E5E5;
+  font-size: 0.875rem;
+}
+
+
+
+
+
+
+/* wrap_footer */
+#wrap_footer {
+  width: 100%;
+  height: 140px;
+  background-color: #231F20
+}
+
+#wrap_footer .footer .footer_floor1 {
+  width: 100%;
+  height: 50px;
+  /* line-height: 50px; */
+  font-size: 12px;
+  padding-left: 20px;
+}
+#wrap_footer .footer .footer_floor1 .text li {
+  padding-right: 10px;
+}
+#wrap_footer .footer .footer_floor1 .sns {
+  padding-right: 20px;
+}
+#wrap_footer .footer .footer_floor1 .sns img {
+  width: 35px;
+  height: 35px;
+}
+#wrap_footer .footer .footer_floor1 .sns li {
+  padding-left: 25px;
+  padding-top: 8px;
+}
+
+.footer_floor2 {
+  width: 100%;
+  height: 90px;
+  padding-left: 20px;
+  position: relative;
+}
+.footer_floor2 .footer_text {
+  margin-top: 15px;
+  font-size: 12px;
+}
+.footer_floor2 .footerlogo {
+  position: absolute;
+  bottom: 18px;
+  margin: 0 40px 0 0;
+}

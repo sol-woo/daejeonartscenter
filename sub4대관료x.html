@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>대관료</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="./css/sub4.css">
+  <link rel="stylesheet" media="all and (max-width:1199px)" href="./css/sub4T.css">
+  <link rel="stylesheet" media="all and (max-width:767px)" href="./css/sub4M.css">
+  <!-- scroll -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./script/mixitup.min.js"></script>
+  <link rel="stylesheet" href="./malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.min.css">
+  <script src="./malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- header -->
+    <header id="wrap_header">
+      <div class="site_info">
+        <ul>
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">ENGLISH</a></li>
+          <li><a href="./sitemap.html">사이트맵</a></li>
+        </ul>
+      </div>
+      <div class="header_bottom">
+        <div class="logo"><a href="./daejeonartscenter.html"><img src="./img/logo/대전예당logo.png" alt="대전예술의전당 로고"></a>
+        </div>
+        <div class="nav">
+          <div>
+            <input type="text" placeholder="검색">
+            <a href="#"><span class="material-icons-outlined search">
+                search
+              </span></a>
+          </div>
+          <a href="#" class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- wrap nav -->
+    <div id="wrap_nav">
+      <div class="nav">
+        <ul class="main_menu">
+          <li class="concert"><a href="#">공연</a>
+            <ul class="sub_menu menu1">
+              <li><a href="#">공연안내</a></li>
+              <li><a href="#">예매/취소안내</a></li>
+              <li><a href="#">페스티벌</a></li>
+            </ul>
+          </li>
+          <li class="placerental"><a href="#">대관</a>
+            <ul class="sub_menu menu2">
+              <li class="announcement"><a href="./sub대관공고.html">대관공고</a></li>
+              <li class="concerthall"><a href="./sub2공연장신청안내.html">공연장대관</a></li>
+              <li class="conventionhall"><a href="./sub5컨벤션홀대관안내.html">컨벤션홀대관</a></li>
+            </ul>
+          </li>
+          <li class="membership"><a href="#">회원제</a>
+            <ul class="sub_menu menu3">
+              <li><a href="#">회원안내</a></li>
+              <li><a href="#">Artner</a></li>
+            </ul>
+          </li>
+          <li class="Servicecenter"><a href="#">고객센터</a>
+            <ul class="sub_menu menu4">
+              <li><a href="#">이용안내</a></li>
+              <li><a href="#">고객문의</a></li>
+              <li><a href="#">공지사항</a></li>
+            </ul>
+          </li>
+          <li class="iontroduce"><a href="#">기관소개</a>
+            <ul class="sub_menu menu5">
+              <li><a href="#">인사말</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">운영목표</a></li>
+              <li><a href="#">조직과기구</a></li>
+              <li><a href="#">시설안내</a></li>
+              <li><a href="#">후원회</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- wrapnav// -->
+
+    <!-- wrap_subpage4 -->
+    <div id="wrap_subpage4">
+      <!-- sub_top -->
+      <div class="sub_top">대관</div>
+
+      <!-- submenu -->
+
+      <div id="submenu">
+        <a href="./daejeonartscenter.html"><span class="material-icons-outlined top">
+            home
+          </span></a>
+        <div class="tabmenu tabmenu1">
+          <div class="big_tab">
+            <ul class="content_tap">
+              <li><a href="./sub대관공고.html"></a></li>
+              <li><a href="./sub대관공고.html"></a></li>
+            </ul>
+          </div>
+          <div class="sm_select">
+            <select title="" onchange="window.open(value,'_self');" name="select" id="tabmenu1">
+              <option value="./sub대관공고.html">대관</option>
+              <option value="./sub대관공고.html">공연</option>
+            </select>
+          </div>
+        </div>
+        <div class="tabmenu tabmenu2">
+          <div class="big_tab">
+            <ul class="content_tap">
+              <li><a href="./sub2공연장신청안내.html"></a></li>
+              <li><a href="./sub대관공고.html"></a></li>
+              <li><a href="./sub5컨벤션홀대관안내.html"></a></li>
+            </ul>
+          </div>
+          <div class="sm_select">
+            <select title="" onchange="window.open(value,'_self');" name="select" id="tabmenu2">
+              <option value="./sub2공연장신청안내.html">공연장대관</option>
+              <option value="./sub대관공고.html">대관공고</option>
+              <option value="./sub5컨벤션홀대관안내.html">컨벤션홀대관</option>
+            </select>
+          </div>
+        </div>
+        <div class="tabmenu tabmenu3">
+          <div class="big_tab">
+            <ul class="content_tap">
+              <li><a href="./sub4대관료.html"></a></li>
+              <li><a href="./sub대관공고.html"></a></li>
+            </ul>
+          </div>
+          <div class="sm_select">
+            <select title="" onchange="window.open(value,'_self');" name="select" id="tabmenu3">
+              <option value="./sub4대관료.html">대관료</option>
+              <option value="./sub대관공고.html">대관안내</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <a href="#"><span class="material-icons-outlined top print">
+              print
+            </span></a>
+          <a href="#"><span class="material-icons-outlined top share">
+              share
+            </span></a>
+        </div>
+      </div>
+      <!-- submenu// -->
+
+      <!-- sub_content4 -->
+      <div id="wrap_subcontent4">
+        <div class="sub_title4">
+          <h3>대관료</h3>
+        </div>
+        <!-- sub2=sub_tab -->
+        <div class="sub_con">
+          <div class="sub4item sub4item1 ">
+            <div class="item_title">
+              <h4>공연 대관료</h4>
+            </div>
+            <div>
+              <div class="item_box">
+                <p>(단위 : 원)</p>
+                <div class="scrollbar scrollbar1" data-mcs-theme="dark-thin">
+                  <table class="table table1">
+                    <colgroup>
+                      <col style="width:13%;">
+                      <col style="width:15%;">
+                      <col style="width:22%;" span="2">
+                      <col style="width:28%;">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col" rowspan="2">구분</th>
+                        <th scope="col" rowspan="2">좌석수</th>
+                        <th scope="col" colspan="2">장르</th>
+                        <th scope="col" rowspan="2">1회 사용시간</th>
+                      </tr>
+                      <tr>
+                        <th scope="col">음악,연극,무용,합창</th>
+                        <th scope="col">오페라,발레,뮤지컬</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" rowspan="2">아트홀</th>
+                        <td rowspan="2">1,546 <br>오케스트라피트 포함</td>
+                        <td>연극,무용 1,500,000</td>
+                        <td>오페라,발레 2,000,000</td>
+                        <td rowspan="4">
+                          <ul>
+                            <li>공연 1회당</li>
+                            <li>공연 1시간전부터 공연 종료 시까지</li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>음악,합창 1,800,000 </td>
+                        <td>뮤지컬 2,500,000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" rowspan="2">앙상블홀</th>
+                        <td rowspan="2"> 643 <br>오케스트라피트 포함</td>
+                        <td>연극,무용 500,000 </td>
+                        <td>오페라,발레 700,000</td>
+                      </tr>
+                      <tr>
+                        <td>음악,합창 500,000</td>
+                        <td>뮤지컬 800,000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <ul>
+                <li>1회란 오전, 오후, 야간 중 하나를 말함</li>
+                <li>리허설은 당일 사용을 원칙으로 하며, 1회 리허설 비용은 기본 대관료에 포함됨<br>
+                  다만, 1일 2회 이상 리허설 시 공연 준비 대관료 적용 부과</li>
+                <li>부대설비 사용료(스타인웨이 피아노, 녹음 등) 별도</li>
+                <li>시연회 및 공개리허설은 공연 대관료의 30% 할인(다만, 무료공연에 한함)</li>
+                <li>심야공연(공연 시작시간 22:00~24:00)은 공연 대관료의 50% 할증</li>
+                <li>3주 이상 또는 21회 이상 공연이나 특별한 형식의 공연 대관료는 시장이 별도로 정함</li>
+              </ul>
+            </div>
+          </div>
+          <div class="sub4item sub4item2 ">
+            <div class="item_title">
+              <h4>공연 준비ㆍ철수 대관료</h4>
+            </div>
+            <div>
+              <div class="item_box">
+                <p>(단위 : 원)</p>
+                <div class="scrollbar scrollbar2" data-mcs-theme="dark-thin">
+                  <table class="table table2">
+                    <colgroup>
+                      <col style="width:12%;">
+                      <col style="width:20%;">
+                      <col style="width:17%;" span="4">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col" rowspan="2">구분</th>
+                        <th scope="col" rowspan="2">장르별</th>
+                        <th scope="col">오전</th>
+                        <th scope="col">오후</th>
+                        <th scope="col">야간</th>
+                        <th scope="col">철야</th>
+                      </tr>
+                      <tr>
+                        <th scope="col">09:00~12:00</th>
+                        <th scope="col">13:00~17:00 </th>
+                        <th scope="col">18:00~22:00</th>
+                        <th scope="col">22:00 이후 매 3시간당</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" rowspan="4">아트홀</th>
+                        <td>연극, 무용 </td>
+                        <td>375,000 </td>
+                        <td>375,000</td>
+                        <td>750,000 </td>
+                        <td>1,125,000</td>
+                      </tr>
+                      <tr>
+                        <td>음악, 합창</td>
+                        <td>450,000 </td>
+                        <td>450,000</td>
+                        <td>900,000 </td>
+                        <td>1,350,000</td>
+                      </tr>
+                      <tr>
+                        <td>오페라, 발레</td>
+                        <td>500,000</td>
+                        <td>500,000 </td>
+                        <td>1,000,000</td>
+                        <td>1,500,000</td>
+                      </tr>
+                      <tr>
+                        <td>뮤지컬</td>
+                        <td>625,000</td>
+                        <td>625,000</td>
+                        <td>1,250,000</td>
+                        <td>1,875,000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" rowspan="3">앙상블홀</th>
+                        <td>연극, 무용, 음악, 합창</td>
+                        <td>125,000 </td>
+                        <td>125,000</td>
+                        <td>250,000</td>
+                        <td>375,000</td>
+
+                      </tr>
+                      <tr>
+                        <td>오페라 </td>
+                        <td>175,000</td>
+                        <td>175,000</td>
+                        <td>350,000</td>
+                        <td>525,000</td>
+                      </tr>
+                      <tr>
+                        <td>뮤지컬</td>
+                        <td>200,000</td>
+                        <td>200,000</td>
+                        <td>400,000</td>
+                        <td>600,000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <ul>
+                <li>공연 후 1시간 이내의 철수작업은 별도의 사용료를 부과하지 않음</li>
+                <li>철야는 부득이한 경우를 제외하고 원칙적으로 불허함</li>
+                <li>공연 준비를 위한 사용일 경우 공연기간 중이라도 공연 준비 사용료에 준함</li>
+              </ul>
+            </div>
+          </div>
+          <div class="sub4item sub4item3 ">
+            <div class="item_title">
+              <h4>공연 대관료에 포함되는 사항</h4>
+            </div>
+            <div>
+              <ul>
+                <li>해당 공연장의 무대 및 객석</li>
+                <li>해당 분장실 사용 : 준비기간 및 공연기간
+                  <ul>
+                    <li>-아트홀: 16실 이내</li>
+                    <li>-앙상블홀 : 8실 이내</li>
+                  </ul>
+                </li>
+                <li>하우스 매니저와 안내원 등 객석관리 인원</li>
+                <li>기본 조명·음향기기 및 기계장치</li>
+                <li>공연 및 총 연습 중 냉·난방</li>
+                <li>출연자 휴게실과 공통시설 및 공간</li>
+                <li>그 밖에 대관료를 받지 않는 부대설비</li>
+              </ul>
+            </div>
+          </div>
+          <div class="sub4item sub4item4 ">
+            <div class="item_title">
+              <h4>그 밖의 대관료<span> (방송, 영화, 녹음, 녹화, CF제작 등)</span></h4>
+            </div>
+            <div>
+              <div class="item_box">
+                <p>(단위 : 원)</p>
+                <div class="scrollbar scrollbar3" data-mcs-theme="dark-thin">
+                  <table class="table table4">
+                    <colgroup>
+                      <col style="width:24%;">
+                      <col style="width:19%;" span="4">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">구분</th>
+                        <th scope="col">오전</th>
+                        <th scope="col">오후</th>
+                        <th scope="col">야간</th>
+                        <th scope="col">철야</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>아트홀</td>
+                        <td>4,000,000 </td>
+                        <td>4,000,000</td>
+                        <td>6,000,000</td>
+                        <td>10,000,000</td>
+                      </tr>
+                      <tr>
+                        <td>앙상블홀</td>
+                        <td>2,000,000</td>
+                        <td>2,000,000 </td>
+                        <td> 3000,000</td>
+                        <td>5000,000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <ul>
+                <li>분장실 2개, 기본조명 지원(녹음 사용료는 50% 할인)</li>
+                <li>무대를 제외한 객석만을 대관하는 경우 30% 할인</li>
+                <li>로비만을 대관하는 경우 50% 할인</li>
+                <li>부대설비 사용료 별도</li>
+              </ul>
+            </div>
+          </div>
+          <div class="sub4item sub4item5 ">
+            <div class="item_title">
+              <h4>야외 원형극장</h4>
+            </div>
+            <div>
+              <div class="item_box">
+                <p>(단위 : 원)</p>
+                <div class="scrollbar scrollbar4" data-mcs-theme="dark-thin">
+                  <table class="table table5">
+                    <colgroup>
+                      <col style="width:20%">
+                      <col style="width:40%" span="2">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">면적(m²)</th>
+                        <th scope="col">사용목적(좌석수) </th>
+                        <th scope="col">사용시간 및 사용료</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>450</td>
+                        <td>850</td>
+                        <td>100,000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <ul>
+                <li>1회 4시간 기준 (공연에 한함)</li>
+                <li>분장실 기본 2실 사용</li>
+                <li>공연준비 및 철수 사용료(09:00~18:00)는 각각 50% 할인
+                  <ul>
+                    <li>-18:00 이후 3시간당 공연 준비 및 철수 사용료의 50% 추가</li>
+                  </ul>
+                </li>
+                <li>음향, 조명용 전원 100Kw이내 사용 가능
+                  <ul>
+                    <li>-100Kw이상 사용할 경우 발전차 사용 (단체부담)</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+
+    <!-- quickmenu -->
+    <div id="quickmenu">
+      <ul>
+        <li><a href="./daejeonartscenter.html"><span> QUICK</span><span class="material-icons-outlined">
+              home
+            </span></a>
+        </li>
+        <li class="quikitem"><a href="#"><img src="./img/퀵메뉴/1월간프로그램가이드.png" alt="월간프로그램가이드"
+              class="rotate-center"><span>
+              월간프로그램가이드</span></a></li>
+        <li class="quikitem"><a href="#"><img src="./img/퀵메뉴/1공연예매안내.png" alt="공연/예매안내"
+              class="rotate-center"><span>공연예매안내042.270.8333</span></a>
+        </li>
+        <li class="quikitem"><a href="#"><img src="./img/퀵메뉴/1공연예매.png" alt="인터파크예매" class="rotate-center"><span>
+              인터파크예매1544.1566</span></a></li>
+        <li class="quikitem"><a href="#"><img src="./img/퀵메뉴/1좌석배치도.png" alt="좌석배치도" class="rotate-center"><span
+              class="one">
+              좌석배치도</span></a></li>
+        <li class="quikitem"><a href="#"><img src="./img/퀵메뉴/1오시는길.png" alt="오시는길" class="rotate-center"><span
+              class="one">
+              오시는길</span></a></li>
+        <li class="quikitem"><a href="#"><img src="./img/퀵메뉴/1멤버십.png" alt="맴버십" class="rotate-center"><span
+              class="one">
+              맴버십</span></a></li>
+        <li><a href="#"><span class="material-icons-outlined expand_less">
+              expand_less
+            </span><span> TOP</span></a></li>
+
+      </ul>
+    </div>
+
+    <!-- banner_org -->
+    <div id="banner_org" class="swiper mySwiper3">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide1"><a href="https://www.kocaca.or.kr/" target='_blank'>한국문화예술회관연합회</a> </div>
+        <div class="swiper-slide slide2"><a href="https://dmdt.artdj.kr/dmdt/" target='_blank'>대전시립무용단</a></div>
+        <div class="swiper-slide slide2"><a href="https://djpc.artdj.kr/djpc/" target='_blank'>대전시립합창단</a></div>
+        <div class="swiper-slide slide2"><a href="https://dpo.artdj.kr/dpo/" target='_blank'>대전시립교향악단</a></div>
+        <div class="swiper-slide slide2"><a href="#">대전시립청소년합창단</a></div>
+        <div class="swiper-slide slide2"><a href="https://www.daejeon.go.kr/" target='_blank'>대전광역시</a></div>
+        <div class="swiper-slide slide2"><a href="https://www.culture.go.kr/index.do" target='_blank'>문화포털</a></div>
+      </div>
+    </div>
+    <!-- wrap_footer -->
+    <div id="wrap_footer">
+      <div class="footer">
+        <div class="footer_floor1">
+          <ul class="text">
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">영상정보처리기기운영 관리방침</a></li>
+            <li><a href="#">이메일집단수집거부</a></li>
+            <li><a href="#">뷰어다운로드</a></li>
+          </ul>
+          <ul class="sns">
+            <li><a href="https://www.youtube.com/channel/UCmptozukZlJ5sLqyBbc24jA" target='_blank'><img
+                  src="./img/sns/youtube.png" alt="유튜브" class="rotate-diagonal-1"></a></li>
+            <li><a href="https://m.facebook.com/djartscenter" target='_blank'><img src="./img/sns/facebook.png"
+                  alt="페이스북" class="rotate-diagonal-1"></a></li>
+            <li><a href="https://www.instagram.com/djartscenter/" target='_blank'><img src="./img/sns/instar.png"
+                  alt="인스타그램" class="rotate-diagonal-1"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_floor2">
+        <div class="footer_text">
+          <address>우)35204 대전광역시 서구 둔산대로 135 대전예술의전당</address>
+          <address>Tel. 042-270-8333 Fax. 042-270-8149</address>
+          <p>Copyright(c) 2020 DAEJEON ARTS CENTER. All Rights Reserved.</p>
+        </div>
+        <div class="footerlogo"><img src="./img/logo/logo_footer.png" alt="로고"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    //  menubutton  /nav 
+    $(".menu").click(function (e) {
+      e.preventDefault();
+      $(this).toggleClass("active");
+      $("#wrap_nav").stop().slideToggle();
+    });
+
+    $(".nav > ul > li").click(function () {
+
+      if ($(this).hasClass("active")) {
+        $(this).removeClass("active");
+      } else {
+        $(".nav > ul > li").removeClass("active");
+        $(this).addClass("active");
+      }
+    });
+  </script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+        // clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".mySwiper3", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
+      loopAdditionalSlides: 1,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1400: {
+          slidesPerView: 6,
+          spaceBetween: 60,
+        },
+      },
+    });
+  </script>
+  <script>
+    (function ($) {
+      $(window).on("load", function () {
+        $(".scrollbar").mCustomScrollbar({
+          horizontalScroll: true,
+          theme: "light-3",
+          scrollButtons: {
+            enable: true
+          }
+        });
+      });
+    })(jQuery);
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+$(document).ready(function(e) {
+//	$('.info_month a').click(function(){
+//		$(this).parent().parent('li').addClass('ov').siblings('li').removeClass('ov');
+//		$(this).closest('ul').next('.wrap_day_schedule').addClass('active');
+//	});
+
+//	$('.btn_close_month').click(function(){
+//		
+//		$('.wrap_day_schedule').removeClass('active');
+//		$(this).closest('.wrap_year_area').find('.info_month li').removeClass('ov');
+//	});
+
+	$(".wrap_day_lst").mCustomScrollbar({
+		axis:"x",
+		autoExpandScrollbar:true,
+		advanced:{autoExpandHorizontalScroll:true}
+	});	
+})
+
+
+//$(function(){
+//	//공연목록
+//	$('.play_lst li').hover(function(){
+//		$(this).addClass('on').siblings().removeClass('on');
+//	},function(){
+//		$(this).removeClass('on');
+//	});
+//
+//	$('.play_lst li a').focus(function(){
+//		$(this).parents('li').addClass('active').siblings().removeClass('active');
+//	});
+//	$('.play_lst li a').focusout(function(){
+//		$(this).parents('li').removeClass('active');
+//	});
+//})
+
+
+//slide total
+$(function(){
+
+	if (typeof String.prototype.startsWith !== 'function') {
+	   String.prototype.startsWith = function(searchString, position) {	
+		   position = position || 0;
+		   return this.substring(position,  position + searchString.length) === searchString;
+	   }
+	}
+
+	if (typeof String.prototype.endsWith !== 'function') {
+	   String.prototype.endsWith = function(searchString, strtLength) {	
+		  strtLength = (strtLength === undefined || strtLength > this.length)? this.length : strtLength;  	
+		  return this.substring(strtLength - searchString.length, strtLength) === searchString;
+	   }
+	}
+
+	//visual
+	var swiper_visual = new Swiper('.wrap_visual', {
+        loop: true,
+		effect: 'fade',
+		autoplay: {
+			delay:5000,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next-visual',
+			prevEl: '.swiper-button-prev-visual',
+		},
+		pagination: {
+			el : '.swiper-pagination-main',
+			type: 'custom',
+				renderCustom: function (swiper, current, total) {
+				if(current < 10) {current = '0' + current}
+				if(total < 10) {total = '0' + total}
+				return '<i>' + current + '</i>' + ' / ' + total;
+			}
+		},
+	});
+		
+	$('.wrap_control_visual .swiper-button-auto').bind('click', function () {
+	   	if( $(this).hasClass('btn_play')){
+	   		 swiper_visual.autoplay.start();
+		}else{
+			 swiper_visual.autoplay.stop();
+		}
+	   $('.wrap_control_visual .swiper-button-auto').addClass('on');
+	   $(this).removeClass('on');
+	});
+
+
+
+	//공연목록 - tab01	
+    var swiper_pl_tab01 = new Swiper('.move_tab01', {
+        loop: true,
+		loopFillGroupWithBlank : true,
+		slidesPerView:4,
+		slidesPerGroup:1,
+		observer: true,
+		observeParents:true,
+		simulateTouch:true,
+		navigation:{
+			nextEl:'.swiper-button-next-pl-tab01',
+			prevEl:'.swiper-button-prev-pl-tab01',
+		},
+		breakpointsInverse: true,
+		breakpoints: {
+			// when window width is >=320px
+			320: {
+				slidesPerView: 'auto',
+				slidesPerGroup:1,
+			}
+		}
+	});
+
+	//공연목록 - tab02
+    var swiper_pl_tab02 = new Swiper('.move_tab02', {
+        loop: true,
+		loopFillGroupWithBlank : true,
+		slidesPerView:4,
+		slidesPerGroup:1,
+		observer: true,
+		observeParents:true,
+		simulateTouch:true,
+		navigation:{
+			nextEl:'.swiper-button-next-pl-tab02',
+			prevEl:'.swiper-button-prev-pl-tab02',
+		},
+		breakpointsInverse: true,
+		breakpoints: {
+			// when window width is >=320px
+			320: {
+				slidesPerView: 'auto',
+				slidesPerGroup:1,
+			}
+		}
+	});
+
+	//공연목록 - tab03
+    var swiper_pl_tab03 = new Swiper('.move_tab03', {
+        loop: true,
+		loopFillGroupWithBlank : true,
+		slidesPerView:4,
+		slidesPerGroup:4,
+		observer: true,
+		observeParents:true,
+		simulateTouch:true,
+		navigation:{
+			nextEl:'.swiper-button-next-pl-tab03',
+			prevEl:'.swiper-button-prev-pl-tab03',
+		},
+		breakpointsInverse: true,
+		breakpoints: {
+			// when window width is >=320px
+			320: {
+				slidesPerView: 'auto',
+				slidesPerGroup:1,
+			}
+		}
+    });
+	
+	//promotion
+	var swiper_promotion = new Swiper('.wrap_promotion_area', {
+		loop: true,
+		direction: 'vertical',
+		navigation: {
+			nextEl: '.swiper-button-next-promotion',
+			prevEl: '.swiper-button-prev-promotion',
+		},
+	});
+
+	//공지목록
+	$('.wrap_bd_area > ul > li > h3 > a').click(function() {
+		var ul = $(this).parent().parent().parent();
+		var i = $(this).parent().parent().index();
+
+		ul.find('li').removeClass('on');
+		ul.find('div').hide().eq(i).fadeIn();
+		$(this).parent().parent().addClass('on');
+	});
+
+
+	//popzone
+	var swiper_popzone = new Swiper('.wrap_popzone_area', {
+        loop: true,
+		slidesPerView: 'auto',
+		autoplay: {
+			delay:5000,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next-pop',
+			prevEl: '.swiper-button-prev-pop',
+		},
+		pagination: {
+			el : '.swiper-pagination',
+			type: 'custom',
+				renderCustom: function (swiper, current, total) {
+				if(current < 10) {current = '0' + current}
+				if(total < 10) {total = '0' + total}
+				return '<i>' + current + '</i>' + ' / ' + total;
+			}
+		},
+		breakpointsInverse: true,
+		breakpoints: {
+			// when window width is >=765px
+			320: {
+				loop: true,
+				slidesPerView: 1,
+			},
+			// when window width is >=640px
+			640: {
+				loop: true,
+				slidesPerView: 2,
+			},
+			// when window width is >=801px
+			801: {
+				loop: false,
+				slidesPerView: 1,
+			}
+		}
+	});
+
+	$('.wrap_control_popzone .swiper-button-auto').bind('click', function () {
+		if( $(this).hasClass('btn_play')){
+			 swiper_popzone.autoplay.start();
+		}else{
+			 swiper_popzone.autoplay.stop();
+		}
+	   $('.wrap_control_popzone .swiper-button-auto').addClass('on');
+	   $(this).removeClass('on');
+	});
+	
+	//banner org
+	var swiper_org = new Swiper('.wrap_bann_area', {
+		loop: true,
+		loopAdditionalSlides: 1,
+		slidesPerView: 'auto',
+		spaceBetween: 15,
+		autoplay: {
+			delay:5000,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next-org',
+			prevEl: '.swiper-button-prev-org',
+		},
+		breakpointsInverse: true,
+		breakpoints: {
+			// when window width is >=765px
+			320: {
+				slidesPerView: 1,
+			},
+			// when window width is >=375px
+			375: {
+				slidesPerView: 'auto',
+			},
+		}
+	});
+
+	$('.wrap_control_bann_org .swiper-button-auto').bind('click', function () {
+		if( $(this).hasClass('btn_play')){
+			 swiper_org.autoplay.start();
+		}else{
+			 swiper_org.autoplay.stop();
+		}
+	   $('.wrap_control_bann_org .swiper-button-auto').addClass('on');
+	   $(this).removeClass('on');
+	});
+})
